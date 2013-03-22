@@ -1,0 +1,20 @@
+$padding: 20px;
+$offset: 6px;
+
+$p: #9FEE00;
+$s1: #519600;
+$s2: #008209;
+$c:#D2FA3E;
+$white:#ffffff;
+
+@mixin breakpoint($point){
+	@if $point == papa{
+		@media(max-width:1600px){@content;}
+		}
+	@if $point == mama{
+		@media(max-width:1250px){@content;}
+		}
+	@if $point == baby{
+		@media(max-width:650px){@content;}
+		}
+	}
