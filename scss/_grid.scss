@@ -1,3 +1,5 @@
+
+
 .grid{
 //padding-left:$padding;
 font-size: 20px;
@@ -30,11 +32,32 @@ float: left;
 
 .module{
 background:url(../img/gray_jean.png);;
-padding:$padding;
+//padding:$padding;
 box-shadow: 5px 5px 5px rgba(black, 0.5);
-margin: 0 0 0 0;
+margin: auto;
 border-style:solid;
 border-width:2px;
 border-color:black;
-height: 800px;
+height: 100%;
+	img{
+		max-width: 100%;
+		max-height: 100%;
+		display: block;
+    	margin: auto;
+	}
+	h1{
+		text-align:center;
+	}
+}
+
+.height-1-1{
+	height: $height;
+}
+
+.height-1-2{
+	height: $height/2;
+}
+
+.blue, .red, .green{
+	background-color: black;
 }
