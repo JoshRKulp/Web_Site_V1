@@ -2,6 +2,7 @@
 
 .grid{
 //padding-left:$padding;
+//background:url(../img/bg.png);
 font-size: 20px;
 }
 [class*='grid-']{
@@ -18,6 +19,12 @@ float: left;
 	@include breakpoint(baby){width: 100%;}
 	}
 
+.grid-1-3{
+	width: 33.333%;
+	@include breakpoint(mama){width: 100%;}
+	@include breakpoint(baby){width: 100%;}
+	}
+
 .grid-1-4{
 	width: 25%;
 	@include breakpoint(mama){width: 50%;}
@@ -31,14 +38,16 @@ float: left;
 	}
 
 .module{
-background:url(../img/gray_jean.png);;
-//padding:$padding;
+padding:$padding;
+background:url(../img/bg.png);
 box-shadow: 5px 5px 5px rgba(black, 0.5);
 margin: auto;
-border-style:solid;
-border-width:2px;
-border-color:black;
-height: 100%;
+//border-style:solid;
+//border-width:2px;
+//border-color:black;
+min-height: 500px;
+font-size: 18px;
+color:white;
 	img{
 		max-width: 100%;
 		max-height: 100%;
@@ -50,14 +59,24 @@ height: 100%;
 	}
 }
 
-.height-1-1{
-	height: $height;
-}
-
-.height-1-2{
-	height: $height/2;
-}
-
-.blue, .red, .green{
-	background-color: black;
+.module-1{
+padding:$padding;
+background:url(../img/textured_papaer.png);
+//box-shadow: 5px 5px 5px rgba(black, 0.5);
+margin: auto;
+//border-style:solid;
+//border-width:2px;
+//border-color:black;
+min-height: 300px;
+font-size: 18px;
+color:black;
+	img{
+		max-width: 100%;
+		max-height: 100%;
+		display: block;
+    	margin: auto;
+	}
+	h1{
+		text-align:center;
+	}
 }
