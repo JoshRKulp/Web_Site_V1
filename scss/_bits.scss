@@ -16,7 +16,7 @@ $white:#ffffff;
 		@media(max-width:1250px){@content;}
 		}
 	@if $point == baby{
-		@media(max-width:650px){@content;}
+		@media(max-width:540px){@content;}
 		}
 	@if $point == smallbaby{
 		@media(max-width:300px){@content;}

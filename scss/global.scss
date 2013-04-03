@@ -24,8 +24,13 @@ text-transform: uppercase;
 		color:white;
 		position: absolute;
 		top:200;
-		right:120;
+		right:140;
 		font-size: 50px;
+		@include breakpoint(baby){
+			top:220;
+			right:145;
+			font-size: 40px;
+		}
 	}
 	h3{
 		color:$c;
@@ -43,11 +48,40 @@ text-transform: uppercase;
 	}
 }
 
+.socialLinks{
+	position:absolute;
+	display:block;
+	right:10px;
+	top: 10px;
+	float:right;
+	@include breakpoint(baby){
+		width: 100%;
+		top: 300px;
+		float:none;
+		text-align:center;
+	}
+	a{
+		color:$c;
+		font-size: 60px;
+		padding:2px;
+		text-shadow: 4px 4px 4px $s1;
+		display: inline-block;
+		position: relative;
+		//float: right;
+
+	}
+	a:hover{
+		color:blue;
+		text-shadow: 4px 4px 4px #000;
+	}
+}
+
 
 
 .page-wrap{
 	width:100%;
 	margin: 250px auto 50px;
+	@include breakpoint(baby){margin: 350px auto 50px;}
 	position: relative;
 	//padding-top: $padding;
 	//background:url(../img/bg.png);
