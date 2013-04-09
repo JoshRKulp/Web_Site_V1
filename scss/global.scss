@@ -84,10 +84,11 @@ text-transform: uppercase;
 .page-wrap{
 	width:100%;
 	@include breakpoint(baby){
-		//margin: 350px auto 50px;
 		width:80%;
 		float:right;
 		top:60px;
+		-webkit-transition:width .3s;
+		-webkit-transition-timing-function: ease-in-out;
 		body.nav-open & {
 			width:20%;
 		}
@@ -98,15 +99,19 @@ text-transform: uppercase;
 
 
 .nav-wrap{
-	//position: fixed;
 	padding-top:255px;
 	width: 100%;
 	float: left;
 	@include breakpoint(baby){
 		width:20%;
 		float: left;
-		padding-top:60px;
+		top:60px;
 		position: fixed;
+		padding:0;
+		height:100%;
+		background: $s2;
+		-webkit-transition:width .3s;
+		-webkit-transition-timing-function: ease-in-out;
 		body.nav-open & {
 			width:80%;
 		}
