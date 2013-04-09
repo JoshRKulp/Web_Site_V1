@@ -13,12 +13,12 @@ $white:#ffffff;
 		@media(max-width:1600px){@content;}
 		}
 	@if $point == mama{
-		@media(max-width:1250px){@content;}
+		@media(max-width:1080px){@content;}
 		}
 	@if $point == baby{
 		@media(max-width:540px){@content;}
 		}
 	@if $point == smallbaby{
-		@media(max-width:300px){@content;}
+		@media(max-width:320px){@content;}
 		}
 	}

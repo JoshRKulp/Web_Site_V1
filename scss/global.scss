@@ -4,16 +4,16 @@
 @import "font";
 
 body{
-//background-color: rgba(100%, 50%, 0%, 0.1);
 background: url(../img/gray_jean.png);
 overflow-x:hidden;
 }
+
 .logo{
 position: absolute;
 top:0;
 right:85%;
 @include breakpoint(mama){right:80%;}
-@include breakpoint(baby){right:60%;}
+@include breakpoint(baby){right:190%; top:30px;}
 margin: -50 -288 0 0;
 width:1000px;
 height: 230px;
@@ -28,9 +28,10 @@ text-transform: uppercase;
 		right:140;
 		font-size: 50px;
 		@include breakpoint(baby){
-			top:220;
-			right:145;
-			font-size: 40px;
+			top:-5;
+			right:-267;
+			font-size: 35px;
+			color:black;
 		}
 	}
 	h3{
@@ -39,13 +40,21 @@ text-transform: uppercase;
 		top:268;
 		right:150;
 		font-size: 15px;
-		letter-spacing:7px;
+		letter-spacing:10px;
+		@include breakpoint(baby){
+			top:38;
+			right:-267;
+			font-size: 13px;
+			letter-spacing:5px;
+		}
 	}
 	img
 	{
 		height: 400px;
+		@include breakpoint(baby){position:fixed; top:-15px;
+		height:100px;
+		}
 		top: 0;
-
 	}
 }
 
@@ -55,12 +64,7 @@ text-transform: uppercase;
 	right:10px;
 	top: 10px;
 	float:right;
-	@include breakpoint(baby){
-		width: 100%;
-		top: 300px;
-		float:none;
-		text-align:center;
-	}
+	@include breakpoint(baby){display:none;}
 	a{
 		color:$c;
 		font-size: 60px;
@@ -68,8 +72,6 @@ text-transform: uppercase;
 		text-shadow: 4px 4px 4px $s1;
 		display: inline-block;
 		position: relative;
-		//float: right;
-
 	}
 	a:hover{
 		color:blue;
@@ -81,73 +83,100 @@ text-transform: uppercase;
 
 .page-wrap{
 	width:100%;
-	margin: 250px auto 50px;
-	@include breakpoint(baby){margin: 350px auto 50px;}
-	position: relative;
-	//padding-top: $padding;
-	//background:url(../img/bg.png);
+	@include breakpoint(baby){
+		//margin: 350px auto 50px;
+		width:80%;
+		float:right;
+		top:60px;
+		body.nav-open & {
+			width:20%;
+		}
 
+		}
+	position: relative;
 }
 
 
-.main-nav
-{
-	padding-top:$padding;
-	font-size: 0px;
+.nav-wrap{
+	//position: fixed;
+	padding-top:255px;
+	width: 100%;
+	float: left;
+	@include breakpoint(baby){
+		width:20%;
+		float: left;
+		padding-top:60px;
+		position: fixed;
+		body.nav-open & {
+			width:80%;
+		}
+	}
 
-	a{
-		display: inline-block;
-		width: 16.66%;
-		padding: $padding;
-		background: $s2;
-		color: $c;
-		text-align: center;
-		font-size:20px;
-		text-transform: uppercase;
-		font-weight: bold;
-		box-shadow: 8px 0 8px -3px black;
-		position: relative;
-		text-spacing: 3px;
-		&:nth-child(1){
-			z-index: 6;
-			}
-		&:nth-child(2){z-index: 5;}
-		&:nth-child(3){z-index: 4;}
-		&:nth-child(4){z-index: 3;}
-		&:nth-child(5){z-index: 2;}
-		&:nth-child(6){
-			z-index: 1;
-			box-shadow: none;
-		}
-
-		@include breakpoint(mama){
-		width: 33.32%;
-		&:nth-child(3){
-			box-shadow: 0 0 25px -6px black;
-		}
-		&:nth-child(6){
-			z-index: 1;
-			box-shadow: none;
-		}
-		}
-
-		@include breakpoint(baby){
-			width: 49.99%;
-			&:nth-child(3){
+	.main-nav
+	{
+		font-size: 0px;
+		.nav-show{display: none;}
+		@include breakpoint(baby){.nav-show{display: inline-block;}}
+		a{
+			display: inline-block;
+			width: 16.66%;
+			padding: $padding;
+			background: $s2;
+			color: $c;
+			text-align: center;
+			font-size:20px;
+			text-transform: uppercase;
+			font-weight: bold;
 			box-shadow: 8px 0 8px -3px black;
-		}
-		}
-		@include breakpoint(smallbaby){
-			width: 100%;
-		}
+			position: relative;
+			text-spacing: 3px;
+			&:nth-child(1){z-index: 7;}
+			&:nth-child(2){
+				z-index: 6;
+				}
+			&:nth-child(3){z-index: 5;}
+			&:nth-child(4){z-index: 4;}
+			&:nth-child(5){z-index: 3;}
+			&:nth-child(6){z-index: 2;}
+			&:nth-child(7){
+				z-index: 1;
+				box-shadow: none;
+			}
 
-		&:hover{
-		background: $c;
-		color:$white;
+			@include breakpoint(mama){
+			width: 33.32%;
+			&:nth-child(4){
+				box-shadow: 0 0 25px -6px black;
+			}
+			&:nth-child(7){
+				z-index: 1;
+				box-shadow: none;
+			}
+			}
+
+			@include breakpoint(baby){
+				width: 100%;
+				&:nth-child(1){box-shadow: 0 0 25px -6px black;}
+				&:nth-child(2){box-shadow: 0 0 25px -6px black;}
+				&:nth-child(3){box-shadow: 0 0 25px -6px black;}
+				&:nth-child(4){box-shadow: 0 0 25px -6px black;}
+				&:nth-child(5){box-shadow: 0 0 25px -6px black;}
+				&:nth-child(6){box-shadow: 0 0 25px -6px black;}
+				&:nth-child(7){box-shadow: 0 0 25px -6px black;}
+				font-size:0px;
+				padding:none;
+				body.nav-open & {
+					font-size:20px;
+				}
+			}
+
+			&:hover{
+			background: $c;
+			color:$white;
+				
+			}
 			
 		}
-		
 	}
-		
-	}
+}
 

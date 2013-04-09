@@ -1,14 +1,8 @@
-
-
 .grid{
-//padding-left:$padding;
-//background:url(../img/bg.png);
 font-size: 20px;
 }
 [class*='grid-']{
 float: left;
- //padding-right:$padding;
- //padding-top:$padding;
 }
 .grid-1-1{
 	width: 100%;
@@ -38,35 +32,29 @@ float: left;
 	}
 
 .module{
-padding:$padding;
-background:url(../img/bg.png);
-box-shadow: 5px 5px 5px rgba(black, 0.5);
-margin: auto;
-//border-style:solid;
-//border-width:2px;
-//border-color:black;
-min-height: 500px;
-font-size: 18px;
-color:white;
-	img{
-		max-width: 100%;
-		max-height: 100%;
-		display: block;
-    	margin: auto;
-	}
-	h1{
-		text-align:center;
-	}
+	padding:$padding;
+	background:url(../img/bg.png);
+	box-shadow: 5px 5px 5px rgba(black, 0.5);
+	margin: auto;
+	min-height: 500px;
+	font-size: 18px;
+	color:white;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			display: block;
+	    	margin: auto;
+		}
+		h1{
+			text-align:center;
+			text-size: 50px;
+		}
 }
 
 .module-1{
 padding:$padding;
 background:url(../img/textured_papaer.png);
-//box-shadow: 5px 5px 5px rgba(black, 0.5);
 margin: auto;
-//border-style:solid;
-//border-width:2px;
-//border-color:black;
 min-height: 300px;
 font-size: 18px;
 color:black;
