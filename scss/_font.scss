@@ -22,14 +22,15 @@
 
 
 @mixin font-stack-icon{
-	font-family: 'Entypo';
+	font-family: 'FontAwesome';
 	}
 	
 [data-icon]:before{
 	@include font-stack-icon;
 	content: attr(data-icon);
 	text-transform: none;
-	font-size: 40px;
+	font-size: 25px;
+  @include breakpoint(baby){font-size: 22px; margin: 2px;}
 	font-weight: normal;
   font-style: normal;
 	margin: 5px;

@@ -2,83 +2,13 @@
 @import "normalize";
 @import "grid";
 @import "font";
+@import "logo";
+@import "nav";
 
 body{
 background: url(../img/gray_jean.png);
 overflow-x:hidden;
 }
-
-.logo{
-position: absolute;
-top:0;
-right:85%;
-@include breakpoint(mama){right:80%;}
-@include breakpoint(baby){right:190%; top:30px;}
-margin: -50 -288 0 0;
-width:1000px;
-height: 230px;
-text-align: right;
-padding-top: -4px;
-padding-right: 50px;
-text-transform: uppercase;
-	h1{
-		color:white;
-		position: absolute;
-		top:200;
-		right:140;
-		font-size: 50px;
-		@include breakpoint(baby){
-			top:-5;
-			right:-267;
-			font-size: 35px;
-			color:black;
-		}
-	}
-	h3{
-		color:$c;
-		position: absolute;
-		top:268;
-		right:150;
-		font-size: 15px;
-		letter-spacing:10px;
-		@include breakpoint(baby){
-			top:38;
-			right:-267;
-			font-size: 13px;
-			letter-spacing:5px;
-		}
-	}
-	img
-	{
-		height: 400px;
-		@include breakpoint(baby){position:fixed; top:-15px;
-		height:100px;
-		}
-		top: 0;
-	}
-}
-
-.socialLinks{
-	position:absolute;
-	display:block;
-	right:10px;
-	top: 10px;
-	float:right;
-	@include breakpoint(baby){display:none;}
-	a{
-		color:$c;
-		font-size: 60px;
-		padding:2px;
-		text-shadow: 4px 4px 4px $s1;
-		display: inline-block;
-		position: relative;
-	}
-	a:hover{
-		color:blue;
-		text-shadow: 4px 4px 4px #000;
-	}
-}
-
 
 
 .page-wrap{
@@ -98,90 +28,5 @@ text-transform: uppercase;
 }
 
 
-.nav-wrap{
-	padding-top:255px;
-	width: 100%;
-	float: left;
-	@include breakpoint(baby){
-		width:20%;
-		float: left;
-		top:60px;
-		position: fixed;
-		padding:0;
-		height:100%;
-		background: $s2;
-		-webkit-transition:width .3s;
-		-webkit-transition-timing-function: ease-in-out;
-		body.nav-open & {
-			width:80%;
-		}
-	}
 
-	.main-nav
-	{
-		font-size: 0px;
-		.nav-show{display: none;}
-		@include breakpoint(baby){.nav-show{display: inline-block;}}
-		a{
-			display: inline-block;
-			width: 16.66%;
-			padding: $padding;
-			background: $s2;
-			color: $c;
-			text-align: center;
-			font-size:20px;
-			text-transform: uppercase;
-			font-weight: bold;
-			box-shadow: 8px 0 8px -3px black;
-			position: relative;
-			text-spacing: 3px;
-			&:nth-child(1){z-index: 7;}
-			&:nth-child(2){
-				z-index: 6;
-				}
-			&:nth-child(3){z-index: 5;}
-			&:nth-child(4){z-index: 4;}
-			&:nth-child(5){z-index: 3;}
-			&:nth-child(6){z-index: 2;}
-			&:nth-child(7){
-				z-index: 1;
-				box-shadow: none;
-			}
-
-			@include breakpoint(mama){
-			width: 33.32%;
-			&:nth-child(4){
-				box-shadow: 0 0 25px -6px black;
-			}
-			&:nth-child(7){
-				z-index: 1;
-				box-shadow: none;
-			}
-			}
-
-			@include breakpoint(baby){
-				width: 100%;
-				&:nth-child(1){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(2){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(3){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(4){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(5){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(6){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(7){box-shadow: 0 0 25px -6px black;}
-				font-size:0px;
-				padding:none;
-				body.nav-open & {
-					font-size:20px;
-				}
-			}
-
-			&:hover{
-			background: $c;
-			color:$white;
-				
-			}
-			
-		}
-	}
-}
 

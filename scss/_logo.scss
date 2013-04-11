@@ -1,0 +1,50 @@
+.logo{
+position: absolute;
+top:0;
+right:85%;
+@include breakpoint(mama){right:65%;}
+@include breakpoint(baby){right:190%; top:30px;}
+margin: -50 -288 0 0;
+width:1000px;
+height: 230px;
+text-align: right;
+padding-top: -4px;
+padding-right: 50px;
+text-transform: uppercase;
+	h1{
+		color:white;
+		position: absolute;
+		top:200;
+		right:140;
+		font-size: 50px;
+		@include breakpoint(baby){
+			top:-5;
+			right:-267;
+			font-size: 35px;
+			color:black;
+		}
+	}
+	h3{
+		color:$c;
+		position: absolute;
+		top:268;
+		right:150;
+		font-size: 15px;
+		letter-spacing:10px;
+		@include breakpoint(baby){
+			top:38;
+			right:-267;
+			font-size: 13px;
+			letter-spacing:5px;
+			font-weight: bold;
+		}
+	}
+	img
+	{
+		height: 400px;
+		@include breakpoint(baby){position:fixed; top:-15px;
+		height:100px;
+		}
+		top: 0;
+	}
+}
