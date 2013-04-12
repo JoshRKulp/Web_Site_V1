@@ -1,5 +1,5 @@
 .nav-wrap{
-	padding-top:255px;
+	padding-top:262px;
 	width: 100%;
 	float: left;
 	@include breakpoint(baby){
@@ -91,6 +91,14 @@
 	right:10px;
 	top: 10px;
 	float:right;
+	@include breakpoint(mama){
+		position:absolute;
+		display:block;
+		right:0px;
+		top: 0px;
+		float:right;
+		width:70px;
+	}
 	@include breakpoint(baby){display:none;}
 	a{
 		color:$c;
@@ -99,6 +107,7 @@
 		text-shadow: 4px 4px 4px $s1;
 		display: inline-block;
 		position: relative;
+		@include breakpoint(mama){width:100%;}
 	}
 	a:hover{
 		color:blue;

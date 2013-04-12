@@ -3,7 +3,7 @@ position: absolute;
 top:0;
 right:85%;
 @include breakpoint(mama){right:65%;}
-@include breakpoint(baby){right:190%; top:30px;}
+@include breakpoint(baby){right:189%; top:30px;}
 margin: -50 -288 0 0;
 width:1000px;
 height: 230px;
@@ -42,8 +42,10 @@ text-transform: uppercase;
 	img
 	{
 		height: 400px;
-		@include breakpoint(baby){position:fixed; top:-15px;
-		height:100px;
+		@include breakpoint(baby){
+			position:fixed; 
+			top:-15px;
+			height:100px;
 		}
 		top: 0;
 	}

@@ -8,6 +8,9 @@
 body{
 background: url(../img/gray_jean.png);
 overflow-x:hidden;
+@include breakpoint(smallbaby){
+	display:none;
+	}
 }
 
 
