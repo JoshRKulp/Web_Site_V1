@@ -1,7 +1,13 @@
+$itemCount: 7;
+
 .nav-wrap{
 	padding-top:262px;
 	width: 100%;
 	float: left;
+	-webkit-transition:width .3s;
+	-webkit-transition-timing-function: ease-in-out;
+	background: url(../img/gray_jean.png);
+	//z-index:4;
 	@include breakpoint(baby){
 		width:20%;
 		float: left;
@@ -10,8 +16,6 @@
 		padding:0;
 		height:100%;
 		background: $s2;
-		-webkit-transition:width .3s;
-		-webkit-transition-timing-function: ease-in-out;
 		body.nav-open & {
 			width:80%;
 		}
@@ -22,9 +26,11 @@
 		font-size: 0px;
 		.nav-show{display: none;}
 		@include breakpoint(baby){.nav-show{display: inline-block;}}
+		z-index:12;
 		a{
 			display: inline-block;
-			width: 16.66%;
+			//need to become a caculation
+			width: percentage(1/($itemCount - 1));
 			padding: $padding;
 			background: $s2;
 			color: $c;
@@ -35,10 +41,17 @@
 			box-shadow: 8px 0 8px -3px black;
 			position: relative;
 			text-spacing: 3px;
+			//Needs to become a loop-------------
+	
+			@for $i from 1 through $itemCount{
+				$child: $itemCount - $i + 1;
+				&:nth-child(#{$child}){z-index: $i+10;}
+			}
+			//&:nth-child(#{$itemCount}){box-shadow: none;}
+			
+			/*
 			&:nth-child(1){z-index: 7;}
-			&:nth-child(2){
-				z-index: 6;
-				}
+			&:nth-child(2){z-index: 6;}
 			&:nth-child(3){z-index: 5;}
 			&:nth-child(4){z-index: 4;}
 			&:nth-child(5){z-index: 3;}
@@ -47,27 +60,33 @@
 				z-index: 1;
 				box-shadow: none;
 			}
-
+			*/
 			@include breakpoint(mama){
-			width: 33.32%;
-			&:nth-child(4){
-				box-shadow: 0 0 25px -6px black;
-			}
-			&:nth-child(7){
-				z-index: 1;
-				box-shadow: none;
-			}
+			//need to become a caculation
+			//width: percentage(2/($itemCount - 1));
+			width:100%
+			//need to become a caculation
+			//&:nth-child(4){
+			//	box-shadow: 0 0 25px -6px black;
+			//}
+			//need to become a caculation
+			//&:nth-child(7){
+			//	z-index: 1;
+			//	box-shadow: none;
+			//}
 			}
 
 			@include breakpoint(baby){
 				width: 100%;
-				&:nth-child(1){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(2){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(3){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(4){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(5){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(6){box-shadow: 0 0 25px -6px black;}
-				&:nth-child(7){box-shadow: 0 0 25px -6px black;}
+				//&:nth-child{
+					box-shadow: 0 0 25px -6px black;
+					//}
+				//&:nth-child(2){box-shadow: 0 0 25px -6px black;}
+				//&:nth-child(3){box-shadow: 0 0 25px -6px black;}
+				//&:nth-child(4){box-shadow: 0 0 25px -6px black;}
+				//&:nth-child(5){box-shadow: 0 0 25px -6px black;}
+				//&:nth-child(6){box-shadow: 0 0 25px -6px black;}
+				//&:nth-child(7){box-shadow: 0 0 25px -6px black;}
 				font-size:0px;
 				padding:9px;
 				body.nav-open & {
@@ -91,6 +110,7 @@
 	right:10px;
 	top: 10px;
 	float:right;
+	z-index:5;
 	@include breakpoint(mama){
 		position:absolute;
 		display:block;
