@@ -1,9 +1,68 @@
 .grid{
 font-size: 20px;
+background:url(../img/bg.png);
+overflow:auto;
+.module{
+	color:white;
+	}
+}
+.grid:after{
+	clear:both;
+}
+
+.gridResume{
+font-size: 20px;
+background:url(../img/beard2.png);
+background-repeat:no-repeat;
+background-position:center; 
+background-color:$s2;
+overflow:auto;
+	.module{
+		color:white;
+	}
+	.h3{
+		margin:1px;
+		padding:1px;
+		font-size:30px;
+	}
+	.h4{
+		margin:1px;
+		padding:1px;
+		font-size:20px;
+	}
+}
+.gridResume:after{
+	clear:both;
+}
+.gridVideo{
+font-size: 20px;
+overflow:auto;
+.module{
+	color:white;
+	}
+}
+.gridVideo:after{
+	clear:both;
+}
+
+.grid1{
+font-size: 20px;
+overflow:auto;
+.module{
+	color:black;
+	}
 }
 [class*='grid-']{
 float: left;
+overflow:auto;
+p{
+	padding:$padding;
 }
+}
+.grid-1:after{
+	clear:both;
+}
+
 .grid-1-1{
 	width: 100%;
 	float: left;
@@ -20,7 +79,6 @@ float: left;
 	@include breakpoint(mama){width: 100%;}
 	@include breakpoint(baby){width: 100%;}
 	float: left;
-	height: 100%;
 	}
 
 .grid-1-4{
@@ -39,12 +97,8 @@ float: left;
 
 .module{
 	padding:$padding;
-	background:url(../img/bg.png);
-	box-shadow: 5px 5px 5px rgba(black, 0.5);
 	margin: auto;
-	min-height: 500px;
 	font-size: 18px;
-	color:white;
 		img{
 			max-width: 100%;
 			max-height: 100%;
@@ -62,9 +116,8 @@ float: left;
 
 .module-1{
 padding:$padding;
-background:url(../img/textured_papaer.png);
 margin: auto;
-height: 300px;
+height: auto;
 font-size: 18px;
 color:black;
 	img{
@@ -76,4 +129,26 @@ color:black;
 	h1{
 		text-align:center;
 	}
+}
+
+.moduleBlog{
+	padding:$padding;
+	margin: 20px;
+	font-size: 18px;
+	background: rgb(210, 250, 62); /* The Fallback */
+   	background: rgba(210, 250, 62, 0.4); 
+	color:black;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			display: block;
+	    	margin: auto;
+		}
+		h1{
+			text-align:center;
+			text-size: 50px;
+		}
+		.desc{
+			color:white;
+		}
 }
