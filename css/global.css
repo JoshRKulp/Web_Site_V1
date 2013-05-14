@@ -441,171 +441,173 @@ table {
   background-position: center;
   background-color: #4f4f4f;
   overflow: auto;
+  text-align: justified;
 }
-/* line 20, ../scss/_grid.scss */
+/* line 21, ../scss/_grid.scss */
 .gridResume .module {
   color: white;
 }
-/* line 23, ../scss/_grid.scss */
+/* line 24, ../scss/_grid.scss */
 .gridResume .h3 {
   margin: 1px;
   padding: 1px;
   font-size: 30px;
+  text-align: center;
 }
-/* line 28, ../scss/_grid.scss */
+/* line 30, ../scss/_grid.scss */
 .gridResume .h4 {
   margin: 1px;
   padding: 1px;
   font-size: 20px;
 }
 
-/* line 34, ../scss/_grid.scss */
+/* line 36, ../scss/_grid.scss */
 .gridResume:after {
   clear: both;
 }
 
-/* line 37, ../scss/_grid.scss */
+/* line 39, ../scss/_grid.scss */
 .gridVideo {
   font-size: 20px;
   overflow: auto;
 }
-/* line 40, ../scss/_grid.scss */
+/* line 42, ../scss/_grid.scss */
 .gridVideo .module {
   color: white;
 }
 
-/* line 44, ../scss/_grid.scss */
+/* line 46, ../scss/_grid.scss */
 .gridVideo:after {
   clear: both;
 }
 
-/* line 48, ../scss/_grid.scss */
+/* line 50, ../scss/_grid.scss */
 .grid1 {
   font-size: 20px;
   overflow: auto;
 }
-/* line 51, ../scss/_grid.scss */
+/* line 53, ../scss/_grid.scss */
 .grid1 .module {
   color: black;
 }
 
-/* line 55, ../scss/_grid.scss */
+/* line 57, ../scss/_grid.scss */
 [class*='grid-'] {
   float: left;
   overflow: auto;
 }
-/* line 58, ../scss/_grid.scss */
+/* line 60, ../scss/_grid.scss */
 [class*='grid-'] p {
   padding: 20px;
 }
 
-/* line 62, ../scss/_grid.scss */
+/* line 64, ../scss/_grid.scss */
 .grid-1:after {
   clear: both;
 }
 
-/* line 66, ../scss/_grid.scss */
+/* line 68, ../scss/_grid.scss */
 .grid-1-1 {
   width: 100%;
   float: left;
 }
 
-/* line 70, ../scss/_grid.scss */
+/* line 72, ../scss/_grid.scss */
 .grid-1-2 {
   width: 50%;
   float: left;
 }
 @media (max-width: 1080px) {
-  /* line 70, ../scss/_grid.scss */
+  /* line 72, ../scss/_grid.scss */
   .grid-1-2 {
     width: 50%;
   }
 }
 @media (max-width: 400px) {
-  /* line 70, ../scss/_grid.scss */
+  /* line 72, ../scss/_grid.scss */
   .grid-1-2 {
     width: 100%;
   }
 }
 
-/* line 77, ../scss/_grid.scss */
+/* line 79, ../scss/_grid.scss */
 .grid-1-3 {
   width: 33.333%;
   float: left;
 }
 @media (max-width: 1080px) {
-  /* line 77, ../scss/_grid.scss */
+  /* line 79, ../scss/_grid.scss */
   .grid-1-3 {
     width: 100%;
   }
 }
 @media (max-width: 400px) {
-  /* line 77, ../scss/_grid.scss */
+  /* line 79, ../scss/_grid.scss */
   .grid-1-3 {
     width: 100%;
   }
 }
 
-/* line 84, ../scss/_grid.scss */
+/* line 86, ../scss/_grid.scss */
 .grid-1-4 {
   width: 25%;
   float: left;
 }
 @media (max-width: 1080px) {
-  /* line 84, ../scss/_grid.scss */
+  /* line 86, ../scss/_grid.scss */
   .grid-1-4 {
     width: 50%;
   }
 }
 @media (max-width: 400px) {
-  /* line 84, ../scss/_grid.scss */
+  /* line 86, ../scss/_grid.scss */
   .grid-1-4 {
     width: 100%;
   }
 }
 
-/* line 91, ../scss/_grid.scss */
+/* line 93, ../scss/_grid.scss */
 .grid-1-8 {
   width: 12.49%;
   float: left;
 }
 @media (max-width: 1080px) {
-  /* line 91, ../scss/_grid.scss */
+  /* line 93, ../scss/_grid.scss */
   .grid-1-8 {
     width: 50%;
   }
 }
 @media (max-width: 400px) {
-  /* line 91, ../scss/_grid.scss */
+  /* line 93, ../scss/_grid.scss */
   .grid-1-8 {
     width: 100%;
   }
 }
 
-/* line 98, ../scss/_grid.scss */
+/* line 100, ../scss/_grid.scss */
 .module {
   padding: 20px;
   margin: auto;
   font-size: 18px;
 }
-/* line 102, ../scss/_grid.scss */
+/* line 104, ../scss/_grid.scss */
 .module img {
   max-width: 100%;
   max-height: 100%;
   display: block;
   margin: auto;
 }
-/* line 108, ../scss/_grid.scss */
+/* line 110, ../scss/_grid.scss */
 .module h1 {
   text-align: center;
   text-size: 50px;
 }
-/* line 112, ../scss/_grid.scss */
+/* line 114, ../scss/_grid.scss */
 .module .desc {
   color: white;
 }
 
-/* line 117, ../scss/_grid.scss */
+/* line 119, ../scss/_grid.scss */
 .module-1 {
   padding: 20px;
   margin: auto;
@@ -613,19 +615,19 @@ table {
   font-size: 18px;
   color: black;
 }
-/* line 123, ../scss/_grid.scss */
+/* line 125, ../scss/_grid.scss */
 .module-1 img {
   max-width: 100%;
   max-height: 100%;
   display: block;
   margin: auto;
 }
-/* line 129, ../scss/_grid.scss */
+/* line 131, ../scss/_grid.scss */
 .module-1 h1 {
   text-align: center;
 }
 
-/* line 134, ../scss/_grid.scss */
+/* line 136, ../scss/_grid.scss */
 .moduleBlog {
   padding: 20px;
   margin: 20px;
@@ -633,23 +635,48 @@ table {
   background: #d2fa3e;
   /* The Fallback */
   background: rgba(210, 250, 62, 0.4);
-  color: black;
+  color: white;
+  border-radius: 10px;
 }
-/* line 141, ../scss/_grid.scss */
+/* line 144, ../scss/_grid.scss */
 .moduleBlog img {
   max-width: 100%;
   max-height: 100%;
   display: block;
   margin: auto;
 }
-/* line 147, ../scss/_grid.scss */
+/* line 150, ../scss/_grid.scss */
 .moduleBlog h1 {
   text-align: center;
-  text-size: 50px;
+  font-size: 25px;
+  color: white;
 }
-/* line 151, ../scss/_grid.scss */
+/* line 155, ../scss/_grid.scss */
 .moduleBlog .desc {
   color: white;
+}
+
+/* line 160, ../scss/_grid.scss */
+.moduleResume {
+  padding: 20px;
+  margin: 20px;
+  font-size: 16px;
+  color: white;
+}
+/* line 165, ../scss/_grid.scss */
+.moduleResume h3 {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 1px;
+}
+/* line 171, ../scss/_grid.scss */
+.moduleResume h4 {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  margin-top: 1px;
+  font-weight: normal;
 }
 
 @font-face {
@@ -1034,24 +1061,23 @@ h1 {
 .nav-top {
   height: 50px;
   width: 50px;
-  bottom: 0px;
-  right: 0px;
+  bottom: 5px;
+  right: 5px;
   position: fixed;
   background: #d2fa3e;
   z-index: 50;
   font-size: 70px;
   padding-left: 8px;
-  color: white;
   border-radius: 10px;
   background: #d2fa3e;
   /* The Fallback */
   background: rgba(210, 250, 62, 0.75);
 }
-/* line 94, ../scss/global.scss */
+/* line 93, ../scss/global.scss */
 .nav-top:hover {
   background: #d2fa3e;
 }
-/* line 97, ../scss/global.scss */
+/* line 96, ../scss/global.scss */
 .nav-top a {
   color: white;
 }

@@ -7,6 +7,7 @@ $s1: #519600;
 $s2: #4f4f4f;
 $c:#D2FA3E;
 $white:#ffffff;
+$fogdog:#f06d06;
 
 @mixin breakpoint($point){
 	@if $point == papa{
