@@ -1061,23 +1061,24 @@ h1 {
 .nav-top {
   height: 50px;
   width: 50px;
-  bottom: 5px;
-  right: 5px;
+  bottom: 0px;
+  right: 0px;
   position: fixed;
   background: #d2fa3e;
   z-index: 50;
   font-size: 70px;
   padding-left: 8px;
+  color: white;
   border-radius: 10px;
   background: #d2fa3e;
   /* The Fallback */
   background: rgba(210, 250, 62, 0.75);
 }
-/* line 93, ../scss/global.scss */
+/* line 94, ../scss/global.scss */
 .nav-top:hover {
   background: #d2fa3e;
 }
-/* line 96, ../scss/global.scss */
+/* line 97, ../scss/global.scss */
 .nav-top a {
   color: white;
 }

@@ -80,13 +80,14 @@ h1{
 .nav-top{
 	height:50px;
 	width:50px;
-	bottom: 5px;
-	right:5px;
+	bottom: 0px;
+	right:0px;
 	position:fixed;
 	background:$c;
 	z-index:50;
 	font-size:70px;
 	padding-left:8px;
+	color:white;
 	border-radius: 10px;
 	background: rgb(210, 250, 62); /* The Fallback */
    	background: rgba(210, 250, 62, 0.75); 	
