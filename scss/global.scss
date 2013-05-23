@@ -98,3 +98,13 @@ h1{
 			color:white;
 		}
 	}
+
+.roundPic{
+	background-image: url(../img/josh.jpg);
+	background-size: 200px 200px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+}
