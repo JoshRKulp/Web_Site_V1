@@ -101,10 +101,43 @@ h1{
 
 .roundPic{
 	background-image: url(../img/josh.jpg);
-	background-size: 200px 200px;
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
+	background-size: 300px 300px;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+	margin:0px auto;
+	@include breakpoint(mama){
+		background-size: 175px 175px;
+		width: 175px;
+		height: 175px;
+		border-radius: 100px;
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;
+	}
+	@include breakpoint(baby){
+		display: none;
+	}
+}
+
+.button{
+			display: inline-block;
+			//need to become a caculation
+			width: 90%;
+			padding: $padding;
+			background: $c;
+			color: $s2;
+			text-align: center;
+			font-size:25px;
+			text-transform: uppercase;
+			font-weight: bold;
+			position: relative;
+			text-spacing: 3px;
+			margin-top:$padding*2;
+			margin:0px auto;
+			&:hover{
+			background: $white;
+			color: $c;
+			}
 }
