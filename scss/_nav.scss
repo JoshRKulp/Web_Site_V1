@@ -30,7 +30,7 @@ $itemCount: 7;
 		a{
 			display: inline-block;
 			//need to become a caculation
-			width: percentage(1/($itemCount - 1));
+			width: percentage(.998/($itemCount - 1));
 			padding: $padding;
 			background: $s2;
 			color: $c;

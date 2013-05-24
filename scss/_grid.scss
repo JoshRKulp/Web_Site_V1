@@ -1,14 +1,26 @@
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
 .grid{
 font-size: 20px;
 background:url(../img/bg.png);
 overflow:auto;
+@extend .clearfix;
 .module{
 	color:white;
 	}
 }
-.grid:after{
-	clear:both;
-}
+
 
 .gridResume{
 font-size: 20px;
@@ -18,6 +30,7 @@ background-position:center;
 background-color:$s2;
 overflow:auto;
 text-align:justified;
+@extend .clearfix;
 	.module{
 		color:white;
 	}
@@ -33,23 +46,20 @@ text-align:justified;
 		font-size:20px;
 	}
 }
-.gridResume:after{
-	clear:both;
-}
+
 .gridVideo{
 font-size: 20px;
 overflow:auto;
+@extend .clearfix;
 .module{
 	color:white;
 	}
-}
-.gridVideo:after{
-	clear:both;
 }
 
 .grid1{
 font-size: 20px;
 overflow:auto;
+@extend .clearfix;
 .module{
 	color:black;
 	}
@@ -61,30 +71,28 @@ p{
 	padding:$padding;
 }
 }
-.grid-1:after{
-	clear:both;
-}
+
 
 .grid-1-1{
 	width: 100%;
 	float: left;
 	}
 .grid-1-2{
-	width: 50%;
+	width: 49.5%;
 	@include breakpoint(mama){width: 50%;}
 	@include breakpoint(baby){width: 100%;}
 	float: left;
 	}
 
 .grid-1-3{
-	width: 33.333%;
+	width: 33.329%;
 	@include breakpoint(mama){width: 100%;}
 	@include breakpoint(baby){width: 100%;}
 	float: left;
 	}
 
 .grid-1-4{
-	width: 25%;
+	width: 24.5%;
 	@include breakpoint(mama){width: 50%;}
 	@include breakpoint(baby){width: 100%;}
 	float: left;
